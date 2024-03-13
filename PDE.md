@@ -1,0 +1,2 @@
+[[Differanselikninger]]
+[[Numerisk PDE]]

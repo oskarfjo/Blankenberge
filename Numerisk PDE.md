@@ -1,0 +1,2 @@
+[[numeriske metoder]]
+[[Finite Difference]]

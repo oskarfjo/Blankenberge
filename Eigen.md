@@ -1,0 +1,5 @@
+
+[[Lineær algebra]]
+[[Egenverdi]]
+[[Egenvektor]]
+
