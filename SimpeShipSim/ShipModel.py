@@ -30,17 +30,17 @@ class Ship:
 
     def PID(self, dt):
 
-        w_o = 1.5
+        omega = 1.5
+        zeta = 1
         m = self.mass
         d_stjerne = 1/2 * self.rho * self.CD0 * self.Area * 0.5
-        zeta = 1
 
         error = self.setpoint - self.position
         error_a = error
         error_dot = 0 - self.velocity
 
-        k_p = m * w_o ** 2
-        k_d = m * 2 * zeta * w_o - d_stjerne
+        k_p = m * omega ** 2
+        k_d = m * 2 * zeta * omega - d_stjerne
         k_i = k_p / 10
 
         if error_a > 1:
@@ -50,14 +50,10 @@ class Ship:
 
         self.q_i = self.q_i + dt * error_a 
 
-
         u = k_p * error + k_d * error_dot + k_i * self.q_i
-
-
 
         if u > self.max_rps:
             u = self.max_rps
-
         elif u < -self.max_rps:
             u = -self.max_rps
 
@@ -72,6 +68,9 @@ class Ship:
             print("eigenverdier", eigen)
             self.s += 1
 
+
+
+    
     def super_twist(self, dt):
 
         k_a = -100
@@ -86,23 +85,19 @@ class Ship:
         u = -k_a * math.sqrt(abs(error)) * np.sign(error) + self.v
 
         self.rps = u
-        #print(self.v)
+
 
 
 
     def update_dynamics(self, dt):
-        
-        # Implement the dynamic model of the ship here
 
         if self.control_active:
             self.PID(dt)
-            #self.super_twist(dt)
-
+            # self.super_twist(dt)
 
         # thrust = 0.5 * self.rho * self.KT0 * self.propellerDiameter ** 4 * abs(self.rps) * self.rps
         # drag = -0.5 * self.rho * self.CD0 * self.Area * abs(self.velocity) * self.velocity
 
-        
         self.velocity = self.velocity + dt * ((1 / self.mass) * (self.disturbance + (1/2) * self.rho * self.KT0 * self.propellerDiameter ** 4 * abs(self.rps) * self.rps - (1/2) * self.rho * self.CD0 * self.Area * abs(self.velocity) * self.velocity ))
         self.position = self.position + dt * self.velocity
 
