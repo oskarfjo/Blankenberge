@@ -8,7 +8,7 @@ class Ship:
         # Dynamic states
         self.position    = 0.0
         self.velocity    = 0.0
-        self.disturbance = 1.0
+        self.disturbance = random.randint(-15, 15)
         
         # Vessel parameters
         self.mass              = 10
@@ -16,22 +16,24 @@ class Ship:
         self.Area              = 0.04 
         self.propellerDiameter = 0.08
         self.KT0               = 0.4
-        
+        self.rho               = 1000
+
         # User inputs
         self.control_active = False
         self.setpoint       = 0
         self.rps            = 0
         self.max_rps        = 15000 / 60
-        self.s = 0
+        self.s              = 0
 
-        self.q_i = 0
+        self.q_i            = 0
+        self.v              = 0
 
     def PID(self, dt):
 
         w_o = 1.8
         w_r = 1.8
         m = self.mass
-        d_stjerne = 1/2 * 1000 * self.CD0 * self.Area * 0.5
+        d_stjerne = 1/2 * self.rho * self.CD0 * self.Area * 0.5
 
         error = self.setpoint - self.position
         error_a = error
@@ -70,21 +72,37 @@ class Ship:
             print("eigenverdier", eigen)
             self.s += 1
 
+    def super_twist(self, dt):
+
+        k_a = -100
+        k_b = -1
+
+        error = self.setpoint - self.position
+
+        v_dot = - k_b * np.sign(error)   
+
+        self.v = self.v + v_dot * dt 
+
+        u = -k_a * math.sqrt(abs(error)) * np.sign(error) + self.v
+
+        self.rps = u
+        #print(self.v)
+
+
+
     def update_dynamics(self, dt):
         
         # Implement the dynamic model of the ship here
 
         if self.control_active:
-            self.PID(dt)
+            #self.PID(dt)
+            self.super_twist(dt)
 
-
-
-
-        thrust = 0.5 * 1025 * self.KT0 * self.propellerDiameter ** 4 * abs(self.rps) * self.rps
-        drag = -0.5 * 1025 * self.CD0 * self.Area * abs(self.velocity) * self.velocity
+        thrust = 0.5 * self.rho * self.KT0 * self.propellerDiameter ** 4 * abs(self.rps) * self.rps
+        drag = -0.5 * self.rho * self.CD0 * self.Area * abs(self.velocity) * self.velocity
 
         
-        self.velocity = self.velocity + dt * ((1 / self.mass) * (self.disturbance + (1/2) * 1000 * self.KT0 * self.propellerDiameter ** 4 * abs(self.rps) * self.rps - (1/2) * 1000 * self.CD0 * self.Area * abs(self.velocity) * self.velocity ))
+        self.velocity = self.velocity + dt * ((1 / self.mass) * (self.disturbance + (1/2) * self.rho * self.KT0 * self.propellerDiameter ** 4 * abs(self.rps) * self.rps - (1/2) * self.rho * self.CD0 * self.Area * abs(self.velocity) * self.velocity ))
         self.position = self.position + dt * self.velocity
 
         return 0.0
