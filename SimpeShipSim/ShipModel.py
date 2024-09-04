@@ -30,17 +30,17 @@ class Ship:
 
     def PID(self, dt):
 
-        w_o = 1.8
-        w_r = 1.8
+        w_o = 1.5
         m = self.mass
         d_stjerne = 1/2 * self.rho * self.CD0 * self.Area * 0.5
+        zeta = 1
 
         error = self.setpoint - self.position
         error_a = error
         error_dot = 0 - self.velocity
 
         k_p = m * w_o ** 2
-        k_d = 2 * m * w_r - d_stjerne
+        k_d = m * 2 * zeta * w_o - d_stjerne
         k_i = k_p / 10
 
         if error_a > 1:
@@ -66,7 +66,7 @@ class Ship:
         if (self.s < 1):
 
             A = np.array([[0, 1],
-              [-k_p / m, -k_d / m]])
+              [-k_p / m, -(k_d + 2 * d_stjerne) / m]])
     
             eigen = np.linalg.eigvals(A)
             print("eigenverdier", eigen)
@@ -95,11 +95,12 @@ class Ship:
         # Implement the dynamic model of the ship here
 
         if self.control_active:
-            #self.PID(dt)
-            self.super_twist(dt)
+            self.PID(dt)
+            #self.super_twist(dt)
 
-        thrust = 0.5 * self.rho * self.KT0 * self.propellerDiameter ** 4 * abs(self.rps) * self.rps
-        drag = -0.5 * self.rho * self.CD0 * self.Area * abs(self.velocity) * self.velocity
+
+        # thrust = 0.5 * self.rho * self.KT0 * self.propellerDiameter ** 4 * abs(self.rps) * self.rps
+        # drag = -0.5 * self.rho * self.CD0 * self.Area * abs(self.velocity) * self.velocity
 
         
         self.velocity = self.velocity + dt * ((1 / self.mass) * (self.disturbance + (1/2) * self.rho * self.KT0 * self.propellerDiameter ** 4 * abs(self.rps) * self.rps - (1/2) * self.rho * self.CD0 * self.Area * abs(self.velocity) * self.velocity ))
