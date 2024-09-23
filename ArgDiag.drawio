@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 OPR/112.0.0.0" version="24.7.16">
+  <diagram name="Page-1" id="fLZaZXNOp-8kMTYlYk0c">
+    <mxGraphModel dx="470" dy="444" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nKawK-Rx-ptEYZNxvUXG-42" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;" parent="1" vertex="1">
+          <mxGeometry x="419" y="350" width="814" height="432" as="geometry" />
+        </mxCell>
+        <mxCell id="nKawK-Rx-ptEYZNxvUXG-1" value="Vi bør ta en pause på minst&lt;br style=&quot;font-size: 12px;&quot;&gt;seks måneder i opplæringen av KI-systemer som er kraftigere enn GPT-4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;strokeWidth=2;fontStyle=1;spacing=4;perimeterSpacing=1;gradientColor=none;spacingBottom=14;spacingTop=14;" parent="1" vertex="1">
+          <mxGeometry x="738" y="404" width="176" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="nKawK-Rx-ptEYZNxvUXG-2" value="En pause vil tillate delt utvikling og implementering av prosedyrer og sikkerhets protokoller." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;fontSize=11;spacing=1;spacingTop=1;spacingBottom=1;spacingLeft=3;spacingRight=3;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="468" y="459" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nKawK-Rx-ptEYZNxvUXG-3" value="En pause vil tillate samfunnet å akklimatisere seg til KI og vil hjelpe med sikker og gjennomtenkt implementering av teknologien." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="1024" y="401.75" width="160" height="99.5" as="geometry" />
+        </mxCell>
+        <mxCell id="nKawK-Rx-ptEYZNxvUXG-4" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;KI systemer begynner å nærme seg intellekt på menneskelig nivå.&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;fontSize=11;spacingBottom=1;spacingTop=1;spacingLeft=4;spacingRight=4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="657" y="546" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nKawK-Rx-ptEYZNxvUXG-7" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;KI systemer med tilnærmet menneskelig intellekt kan ha store negative konsekvenser for samfunnet.&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;fontSize=10;spacingRight=3;spacingLeft=5;spacingTop=3;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="837" y="546" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nKawK-Rx-ptEYZNxvUXG-22" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="nKawK-Rx-ptEYZNxvUXG-3" target="nKawK-Rx-ptEYZNxvUXG-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1141.5" y="484" as="sourcePoint" />
+            <mxPoint x="981" y="427" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nKawK-Rx-ptEYZNxvUXG-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;" parent="1" source="nKawK-Rx-ptEYZNxvUXG-24" target="nKawK-Rx-ptEYZNxvUXG-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nKawK-Rx-ptEYZNxvUXG-24" value="Mulige konsekvenser:&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;ul style=&quot;font-size: 10px;&quot;&gt;&lt;li style=&quot;font-size: 10px;&quot;&gt;&amp;nbsp;Feilinformasjon&amp;nbsp;&lt;/li&gt;&lt;li style=&quot;font-size: 10px;&quot;&gt;Tap av kontroll&amp;nbsp;&lt;/li&gt;&lt;li style=&quot;font-size: 10px;&quot;&gt;Ekstrem automatisering.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ADADAD;fontSize=10;spacingTop=7;" parent="1" vertex="1">
+          <mxGeometry x="744" y="653" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nKawK-Rx-ptEYZNxvUXG-27" value="OpenAI har selv sagt seg enig i at industrien trenger tilsyn og uavhengig granskning før utvikling av fremtidige systemer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ADADAD;fontSize=10;spacingRight=4;spacingLeft=4;" parent="1" vertex="1">
+          <mxGeometry x="468" y="653" width="160" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="01eGtqPNapAqt_kJ5TMY-2" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" edge="1" parent="1" source="nKawK-Rx-ptEYZNxvUXG-4" target="nKawK-Rx-ptEYZNxvUXG-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="709" y="529" as="sourcePoint" />
+            <mxPoint x="759" y="479" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01eGtqPNapAqt_kJ5TMY-3" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" edge="1" parent="1" source="nKawK-Rx-ptEYZNxvUXG-7" target="nKawK-Rx-ptEYZNxvUXG-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="887" y="537" as="sourcePoint" />
+            <mxPoint x="937" y="487" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01eGtqPNapAqt_kJ5TMY-4" value="Kraftige KI systemer bør utvikles bare hvis vi kan være sikre på at det vil ha en positiv effekt for menneskeheten." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;fontSize=11;spacing=1;spacingTop=1;spacingBottom=1;spacingLeft=3;spacingRight=3;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="468" y="383" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="01eGtqPNapAqt_kJ5TMY-5" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="01eGtqPNapAqt_kJ5TMY-4" target="nKawK-Rx-ptEYZNxvUXG-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="797" y="221" as="sourcePoint" />
+            <mxPoint x="728" y="459" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01eGtqPNapAqt_kJ5TMY-6" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="nKawK-Rx-ptEYZNxvUXG-2" target="nKawK-Rx-ptEYZNxvUXG-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="666" y="271" as="sourcePoint" />
+            <mxPoint x="718" y="406" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01eGtqPNapAqt_kJ5TMY-7" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="nKawK-Rx-ptEYZNxvUXG-27" target="nKawK-Rx-ptEYZNxvUXG-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="614" y="648" as="sourcePoint" />
+            <mxPoint x="664" y="598" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="01eGtqPNapAqt_kJ5TMY-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="01eGtqPNapAqt_kJ5TMY-8" target="nKawK-Rx-ptEYZNxvUXG-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="01eGtqPNapAqt_kJ5TMY-8" value="Valg om hvilke konsekvenser som er akseptable og hvilke som ikke er det bør ikke tas av uvalgte tech-ledere." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ADADAD;fontSize=10;spacingTop=10;spacingBottom=10;spacingLeft=6;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="924" y="653" width="160" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
